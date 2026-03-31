@@ -1,0 +1,125 @@
+/* ====== General ====== */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;/* define la tipografia de la letra. */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #9fe6ff, #2082c4);/* le da una degradacion con una inclinacion de 135°. */    
+    height: 100vh;/* mide la altura conrespecto a la altura de la pagina. */
+    display: flex;/* lo convierte en una caja flexible dando paso al flex-direction: column*/
+    flex-direction: column;/* organiza los elementod hijos en una columna una debajo del otro. */
+}
+
+/* ====== Header ====== */
+header {
+    text-align: center;/* alinea todo lo incluido en el heder al centro. */
+    padding: 0 20px 40px;
+}
+
+header img {
+    width: 300px;
+    filter: drop-shadow(10px 0 15px rgba(0,0,0,0.6));/*le aplica una sombra interna a la imagen de un 60% de opacidad*/
+}
+/*en el drop-shadow el primer valos si se va a la isquierda o derecha, el segundo es hacia arriba o hacia abajo, el tercer valor es que tanto de va a difuminar y el cuarto es el color. */
+
+header h1 {
+    color: #090085;
+    font-size: 3em;/*es tres veses el tamaño del original.*/
+    margin: 0;
+    font-weight: bold;/* hace el texto en negrita.*/
+}
+
+/* ====== Navegación ====== */
+nav {
+    display: flex;
+    justify-content: center;/* centra los elementos hijos en orizontal. */
+    gap: 20px;/*espacio entre cada elemento de los enlases*/
+    margin: 20px 0;
+}
+
+nav button {
+    background-color: #E67E22;
+    border: none;/* elimina el borde por defecto */
+    padding: 12px 0;
+    border-radius: 8px;/* le agrega un border con las esquinas redondeadas */
+    cursor: pointer;/* cambia ell cursor a mano al pasarlo ensima */
+    transition: all 0.3s;/* suavisa el cambio visual anterior a 0.3 segundos */
+}
+
+nav button a {
+    text-decoration: none;/* quita el subrayado de los enlases */
+    color: #FFFFFF;
+    font-weight: bold;/* coloca el texto en negrita */
+    padding: 12px 25px;
+}
+
+nav button:hover {
+    background-color: #2ECC71;/* cambia el fondo a verde */
+    transform: translateY(-2px);/* se mueve hacia ariba detecta el cursor */
+}
+
+/* ====== Main centrado ====== */
+main {
+    flex: 1;/* se utiliza tod el espacio restante y lo divide en partes iguales */
+    display: flex;
+    flex-direction: column;/* los hijos se colocan es columnas uno de bajo del otro */
+    align-items: center;/* centra los hijos horizontalmente dentro del main */
+    justify-content: center;/* centra los hijos vertical dentro de main */
+    padding: 20px;
+}
+
+/* ====== Formulario ====== */
+form {
+    width: 360px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2C3E50;
+}
+
+form input[type="email"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #6DD5FA;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    background-color: #E67E22;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2ECC71;
+    transform: scale(1.05);
+}
+
+/* ====== Footer ====== */
+footer {
+    background-color: #2C3E50;
+    text-align: center;
+    padding: 15px;
+}
+footer p {
+    color: #ECF0F1;
+    margin: 5px 0;
+    font-size: 0.9em;
+}

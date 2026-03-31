@@ -1,0 +1,106 @@
+/* ====== General ====== */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6DD5FA, #3498DB);
+    color: #2C3E50;
+}
+
+/* ====== Header ====== */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ECF0F1;
+}
+
+header img {
+    width: 280px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 15px rgba(0,0,0,0.3));
+}
+
+header h1 {
+    font-size: 2.2em;
+    margin: 0;
+    color: #1C2833;
+}
+
+/* ====== Main ====== */
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+main h3 {
+    text-align: center;
+    font-size: 1.6em;
+    color: #117A65;
+    margin-bottom: 20px;
+}
+
+/* ====== Navegación ====== */
+nav {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+nav button {
+    background-color: #E67E22;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+nav button:nth-child(1) { background-color: #E67E22; color:#FFFFFF; }
+
+nav button a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+nav button:hover {
+    background-color: #2ECC71;
+    transform: translateY(-2px);
+}
+
+/* ====== Contenido con imágenes y texto ====== */
+div {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+div img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+div p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ====== Footer ====== */
+footer {
+    background-color: #2C3E50;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #ECF0F1;
+    font-size: 0.9em;
+}
