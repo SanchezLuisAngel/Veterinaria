@@ -1,125 +1,24 @@
-/* ====== General ====== */
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #6DD5FA, #3498DB);
-    color: #2C3E50;
+    background: #6dd6e9;
+    font-family: sans-serif !important;
+    text-shadow: 0.2px -0.5px 1px;
 }
 
-/* ====== Header ====== */
-header {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #ECF0F1;
+.fondo {
+    background: #d4dcdd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+    
 }
 
-header img {
-    width: 280px;
-    margin-bottom: 15px;
-    filter: drop-shadow(0 0 15px rgba(0,0,0,0.3));
+.bloque {
+    border: black 1px solid;
 }
 
-header h1 {
-    font-size: 2.2em;
-    margin: 0;
-    color: #1C2833;
+.color {
+    background: #6dd6e9 !important;
 }
 
-/* ====== Navegación ====== */
-nav {
-    text-align: center;
-    margin: 20px 0;
-}
-
-nav button {
-    background-color: #E67E22;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-nav button:nth-child(1) { background-color: #E67E22; color:#FFFFFF; }
-nav button:nth-child(2) { background-color: #F39C12; color:#FFFFFF; }
-nav button:nth-child(3) { background-color: #D35400; color:#FFFFFF; }
-nav button:nth-child(4) { background-color: #A04000; color:#FFFFFF; }
-nav button:nth-child(5) { background-color: #82E0AA; color:#2C3E50; }
-nav button:nth-child(6) { background-color: #BFC9CA; color:#2C3E50; }
-
-nav button a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-nav button:hover {
-    background-color: #2ECC71;
-    transform: translateY(-2px);
-}
-
-/* ====== Main ====== */
-main {
-    padding: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #FFFFFF;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
-
-main h2 {
-    text-align: center;
-    font-size: 1.8em;
-    color: #117A65;
-    margin-bottom: 10px;
-}
-
-main h4 {
-    font-size: 1.2em;
-    color: #2C3E50;
-    margin-top: 20px;
-}
-
-/* ====== Tablas ====== */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 25px 0;
-    text-align: center;
-    font-size: 1em;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-table th {
-    background-color: #E67E22;
-    color: #FFFFFF;
-    padding: 12px;
-    font-size: 1.1em;
-}
-
-table td {
-    border: 1px solid #7FB3D5;
-    padding: 10px;
-    color: #2C3E50;
-}
-
-/* ====== Fotos del equipo ====== */
-table img {
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-/* ====== Footer ====== */
-footer {
-    background-color: #2C3E50;
-    text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-}
-
-footer p {
-    color: #ECF0F1;
-    font-size: 0.9em;
+.color1 {
+    background: #2a9eb3 !important;
 }

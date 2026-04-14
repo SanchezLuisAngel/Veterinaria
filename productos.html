@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="imagenes/logo.png">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Mi patita</title>
+</head>
+<body style="background-color: #6dd6e9;">
+    <nav class="navbar navbar-expand-lg cabecera navbar-dark text-bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+            <img src="imagenes/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            Mi patita
+            </a>
+            <!-- Botón para moviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="contactos.html">Contactanos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="citas.html">Citas</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="carrito.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="staff.html">Staff</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+   
+                    <!-- log in -->
+                    <li class="nav-item">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-secondary ms-3" data-bs-toggle="modal" data-bs-target="#myModal">
+                            <img src="imagenes/iconos/login.svg" alt="Icono" width="20" height="20" class="me-2">
+                            Log in
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content fondo_session">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Crea tu cuenta</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="index.html">
+                        <!-- Correo -->
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Ingrese su correo</label>
+                            <input type="email" class="form-control" id="correo" placeholder="example@gmail.com" required>
+                        </div>
+
+                        <!-- Contraseña -->
+                        <div class="mb-3">
+                            <label for="contraseña" class="form-label">Ingrese su contraseña</label>
+                            <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña" required>
+                        </div>
+
+                        <!-- Confirmar contraseña -->
+                        <div class="mb-3">
+                            <label for="Confirmar" class="form-label">Confirma tu contraseña</label>
+                            <input type="password" class="form-control" id="Confirmar" placeholder="Confirmar contraseña" required>
+                        </div>
+
+                        <!-- Nombre de usuario -->
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Ingrese un nombre de usuario</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Admin..." required>
+                        </div>
+
+                        <!-- Botón -->
+                        <div class="d-grid login">
+                            <input type="submit" class="btn btn-primary " value="Log in">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <header>  
+
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .titulo {
+      text-align: center;
+      margin: 30px 0;
+      font-weight: bold;
+    }
+
+    .card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    background-color: #fff;
+     }
+
+    .badge-nuevo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+
+<div class="container mt-5">
+
+  <h2 class="titulo text-danger"> Nuevos Productos</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <span class="badge bg-danger badge-nuevo">Nuevo</span>
+        <img src="imagenes/productos/BolaComida.webp">
+        <div class="card-body">
+          <h5>Bola que tira comida</h5>
+          <p>S/ 25 - Juguete interactivo que libera comida mientras juega.</p>
+          <a href="carrito.html" class="btn btn-danger btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <span class="badge bg-danger badge-nuevo">Nuevo</span>
+        <img src="imagenes/productos/Camade3G.webp">
+        <div class="card-body">
+          <h5>Cama para 3 gatos</h5>
+          <p>S/ 115 - Espacio cómodo para múltiples gatos.</p>
+          <a href="carrito.html" class="btn btn-danger btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card position-relative">
+        <span class="badge bg-danger badge-nuevo">Nuevo</span>
+        <img src="imagenes/productos/CasaparaP.webp">
+        <div class="card-body">
+          <h5>Casa para perro</h5>
+          <p>S/ 150 - Refugio cómodo y resistente para tu mascota.</p>
+          <a href="carrito.html" class="btn btn-danger btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PRODUCTOS -->
+  <h2 class="titulo text-primary mt-5">Productos</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/ComidaP.webp">
+        <div class="card-body">
+          <h5>Comida para perro</h5>
+          <p>S/ 50 - Alimento balanceado para perros.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/ComiG.webp">
+        <div class="card-body">
+          <h5>Comida para gato</h5>
+          <p>S/ 45 - Nutrición completa para gatos.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/ArenaG.webp">
+        <div class="card-body">
+          <h5>Arena para gato</h5>
+          <p>S/ 30 - Arena higiénica de alta absorción.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/ShampooP.webp">
+        <div class="card-body">
+          <h5>Shampoo para perro</h5>
+          <p>S/ 20 - Limpieza suave y protección.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/ShampooG.webp">
+        <div class="card-body">
+          <h5>Shampoo para gato</h5>
+          <p>S/ 22 - Especial para piel sensible.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/CamapequeñaG.webp">
+        <div class="card-body">
+          <h5>Cama pequeña para gato</h5>
+          <p>S/ 60 - Cama cómoda y acolchada.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/Camapequeña2G.webp">
+        <div class="card-body">
+          <h5>Cama pequeña para gato</h5>
+          <p>S/ 60 - Cama cómoda y acolchada.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/CamaP.png">
+        <div class="card-body">
+          <h5>Cama pequeña para perro</h5>
+          <p>S/ 70 - Ideal para perros pequeños.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/CamaP2.webp">
+        <div class="card-body">
+          <h5>Cama pequeña para perro</h5>
+          <p>S/ 70 - Ideal para perros pequeños.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/ComidaCarneG.webp">
+        <div class="card-body">
+          <h5>Comida sachets para gato</h5>
+          <p>S/ 5 - Porción húmeda y deliciosa.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/HuesoP.webp">
+        <div class="card-body">
+          <h5>Hueso para perro</h5>
+          <p>S/ 10 - Juguete para morder resistente.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/JugueteP.webp">
+        <div class="card-body">
+          <h5>Mordedor para perro</h5>
+          <p>S/ 15 - Ideal para entretenimiento.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/RatonparaG.webp">
+        <div class="card-body">
+          <h5>Ratón para gato</h5>
+          <p>S/ 12 - Juguete interactivo.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/JugueteG.webp">
+        <div class="card-body">
+          <h5>Juguete colgante</h5>
+          <p>S/ 18 - Diversión garantizada para gatos.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/RascadorG.webp">
+        <div class="card-body">
+          <h5>Rascador para gato</h5>
+          <p>S/ 40 - Cuida sus uñas y evita daños.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/TransportadorBasico.webp">
+        <div class="card-body">
+          <h5>Transportador simple</h5>
+          <p>S/ 55 - Ligero y práctico.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagenes/productos/Transportador1.webp">
+        <div class="card-body">
+          <h5>Transportador moderno</h5>
+          <p>S/ 90 - Diseño cómodo y seguro.</p>
+          <a href="carrito.html" class="btn btn-primary btn-sm">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

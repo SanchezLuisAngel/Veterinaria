@@ -1,32 +1,198 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="imagenes/logo.png">
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Login</title>
+    <title>Mi patita</title>
 </head>
 <body>
-    <header>
-        <img src="imagenes/logo.png" width="400px">
-        <h1>Clinica veterinaria MiPatita</h1>
-    </header>
-    <main>
-        <nav>
-            <button><a href="nosotros.html">Conócenos</a></button>
-            <button><a href="staff.html">Staff/Equipo médico</a></button>
-        </nav>
-        <br>
-        <form action="home/home.html">
-            <label for="correo">Nombre de usuario o correo electrónico:</label>
-            <input type="email" placeholder="email" id="correo" required>
-            <label for="contraseña">Contraseña: </label>
-            <input type="password" placeholder="password" id="contraseña" required>
-            <input type="submit" value="login">
-        </form>
-    </main>
-    <footer>
-        <p>© 2026 Veterinaria MiPatita - Todos los derechos reservados</p>
-    </footer>
+    <nav class="navbar navbar-expand-lg cabecera navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+            <img src="imagenes/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            <span class="marca">Mi patita</span>
+            </a>
+            <!-- Botón para moviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="contactos.html">Contactanos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="citas.html">Citas</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="carrito.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="staff.html">Staff</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                    <!-- log in -->
+                    <li class="nav-item">
+                        <!-- Button to Open the Modal -->
+                        <button type="button" class="btn btn-secondary ms-3" data-bs-toggle="modal" data-bs-target="#myModal">
+                            <img src="imagenes/iconos/login.svg" alt="Icono" width="20" height="20" class="me-2">
+                            Log in
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content fondo_session">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Crea tu cuenta</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="index.html">
+                        <!-- Correo -->
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Ingrese su correo</label>
+                            <input type="email" class="form-control" id="correo" placeholder="example@gmail.com" required>
+                        </div>
+
+                        <!-- Contraseña -->
+                        <div class="mb-3">
+                            <label for="contraseña" class="form-label">Ingrese su contraseña</label>
+                            <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña" required>
+                        </div>
+
+                        <!-- Confirmar contraseña -->
+                        <div class="mb-3">
+                            <label for="Confirmar" class="form-label">Confirma tu contraseña</label>
+                            <input type="password" class="form-control" id="Confirmar" placeholder="Confirmar contraseña" required>
+                        </div>
+
+                        <!-- Nombre de usuario -->
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Ingrese un nombre de usuario</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Admin..." required>
+                        </div>
+
+                        <!-- Botón -->
+                        <div class="d-grid login">
+                            <input type="submit" class="btn btn-primary " value="Log in">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-5 mt-2"></div>
+    <div class="container mt-5">
+        <div class="text-center p-4 shadow rounded bg-light row">
+            <div class="col-sm-8">
+                <h2 class="mb-3">¡Bienvenido a la Clínica Veterinaria MiPatita!</h2>
+                
+                <p class="lead">
+                    En MiPatita nos dedicamos a cuidar la salud y felicidad de tus mascotas. 
+                    Nuestro equipo brinda atención profesional, cariño y confianza para que cada animal 
+                    reciba el mejor trato posible. Aquí tu compañero de cuatro patas es parte de nuestra familia.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <img src="imagenes/local.png" class="img-fluid mx-auto d-block redondeo" width="200px">
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        
+    </div>
+    
+    <div class="container seccion redondeo">
+        <h2 class="titulo titulo-pro">Novedades y Ofertas</h2>
+        <div class="row">
+            <!-- NOVEDADES -->
+            <div class="col-md-6">
+                <h4 class="text-primary">Novedades</h4>
+                <div class="card-simple">
+                    <img src="imagenes/baños/baño1.webp">
+                    <h5>Nuevo servicio de baño</h5>
+                    <p>Ahora cuidamos la higiene de tu mascota con productos especiales.</p>
+                    <a href="citas.html" class="btn btn-outline-primary btn-sm">Ver más</a>
+                </div>
+
+                <div class="card-simple">
+                    <img src="imagenes/productos/BolaComida.webp" class="img-fluid">
+                    <h5>Nuevos productos</h5>
+                    <p>Tenemos alimentos y accesorios nuevos para tus mascotas.</p>
+                    <a href="carrito.html" class="btn btn-outline-primary btn-sm">Ver más</a>
+                </div>
+            </div>
+
+                <!-- OFERTAS -->
+            <div class="col-md-6">
+                <h4 class="text-danger">Ofertas</h4>
+
+                <div class="card-simple">
+                    <img src="imagenes/baños/vacunas.avif" class="img-fluid">
+                    <h5>Vacunas con descuento</h5>
+                    <p>20% de descuento en vacunas este mes.</p>
+                    <a href="citas.html" class="btn btn-danger btn-sm">Aprovechar</a>
+                </div>
+
+                <div class="card-simple">
+                    <img src="imagenes/baños/llegada.jpg" class="img-fluid">
+                    <h5>Consulta gratis</h5>
+                    <p>Primera consulta sin costo para nuevos clientes.</p>
+                    <a href="citas.html" class="btn btn-danger btn-sm">Aprovechar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 borde">
+        <h3 class="text-center mb-4">Horario de atención</h3>
+        <table class="table table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>LUNES</th>
+                    <th>MARTES</th>
+                    <th>MIÉRCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th>
+                    <th>SÁBADO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09:00 - 13:00</td>
+                    <td>09:00 - 13:00</td>
+                    <td>09:00 - 13:00</td>
+                    <td>09:00 - 13:00</td>
+                    <td>09:00 - 13:00</td>
+                    <td>10:00 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 20:00</td>
+                    <td>14:00 - 20:00</td>
+                    <td>14:00 - 20:00</td>
+                    <td>14:00 - 20:00</td>
+                    <td>14:00 - 20:00</td>
+                    <td>14:00 - 18:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container-fluid pie text-bg-dark pie pt-5 pb-5 text-center mt-5">
+        <footer>
+            <p>@todos los derrechos resevados - 14 de abril del 2026</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
